@@ -145,6 +145,7 @@ cp .env.example .env
 ```env
 # Server Configuration
 PORT=3000
+WHITELIST_DOMAIN=http://yourdomain.com
 
 # Third-party Monitoring API
 HT_API_SERVER=https://api.example.com
@@ -154,12 +155,13 @@ HT_MONITOR_ID=your_monitor_id
 
 ### Configuration Options
 
-| Variable        | Description                    | Default | Required |
-| --------------- | ------------------------------ | ------- | -------- |
-| `PORT`          | Backend server port            | `3000`  | No       |
-| `HT_API_SERVER` | Third-party monitoring API URL | -       | Yes      |
-| `HT_API_KEY`    | API authentication key         | -       | Yes      |
-| `HT_MONITOR_ID` | Monitor ID to fetch data for   | -       | Yes      |
+| Variable           | Description                    | Default            | Required |
+| ------------------ | ------------------------------ | ------------------ | -------- |
+| `PORT`             | Backend server port            | `3000`             | No       |
+| `WHITELIST_DOMAIN` | Allowed domains                | `*` (All if empty) | No       |
+| `HT_API_SERVER`    | Third-party monitoring API URL | -                  | Yes      |
+| `HT_API_KEY`       | API authentication key         | -                  | Yes      |
+| `HT_MONITOR_ID`    | Monitor ID to fetch data for   | -                  | Yes      |
 
 ---
 
@@ -224,6 +226,31 @@ public_html/
 1. Connect to your hosting via FTP/SFTP or File Manager
 2. Upload all contents from the `public/` folder to `public_html/`
 3. Your dashboard will be accessible at `https://yourdomain.com/`
+
+---
+
+### Deploy Single Domain (Frontend + Backend)
+
+Jika ingin deploy di **satu domain/hosting saja** (misal cPanel Node.js atau VPS):
+
+1. **Upload seluruh folder project** (kecuali `node_modules` dan `src`).
+   Struktur di hosting:
+   ```
+   project-root/
+   ├── backend/
+   │   ├── index.js
+   │   └── package.json
+   └── public/
+       ├── index.html
+       └── ...
+   ```
+2. **Setup Node.js App:**
+   - Application Root: `backend`
+   - Application Startup File: `index.js`
+   - Run `npm install` (di dalam folder backend)
+3. **Akses Domain:**
+   - Buka `domain.com` -> akan muncul landing page (karena `index.js` melayani folder `../public`).
+   - API tetap di `domain.com/api/get-status`.
 
 ---
 

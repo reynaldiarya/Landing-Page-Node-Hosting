@@ -4,7 +4,7 @@
   "description": "Frontend build tools for Landing Page Node Hosting",
   "scripts": {
     "dev": "tailwindcss -i ./src/css/input.css -o ./public/assets/css/style.css --watch",
-    "build:css": "npx @tailwindcss/cli@latest -i ./src/input.css -o ./public/assets/css/style.css --minify",
+    "build:css": "npx @tailwindcss/cli@latest -i ./src/css/input.css -o ./public/assets/css/style.css --minify",
     "format": "prettier --write ."
   },
   "devDependencies": {
