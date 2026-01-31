@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard: Server Name</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="./assets/main.css" />
-    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta name="robots" content="noindex, nofollow" />
 
     <style>
       /* Menambahkan pola grid halus pada body */
@@ -17,7 +17,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(
+        background-image:
+          linear-gradient(
             to right,
             rgba(255, 255, 255, 0.05) 1px,
             transparent 1px
@@ -32,7 +33,6 @@
         z-index: -1;
       }
     </style>
-
   </head>
   <body
     class="relative min-h-screen flex items-center justify-center p-4 bg-slate-900 font-sans text-white overflow-hidden"
@@ -178,7 +178,7 @@
           const now = new Date();
           lastCheckedEl.textContent = `Terakhir dicek: ${now.toLocaleTimeString(
             "id-ID",
-            { timeZone: "Asia/Jakarta" }
+            { timeZone: "Asia/Jakarta" },
           )}`;
         };
         updateTimestamp();

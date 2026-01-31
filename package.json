@@ -1,14 +1,12 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "axios": "^1.11.0",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "tailwindcss": "^4.1.11"
-  },
+  "name": "landing-page-frontend",
+  "version": "1.0.0",
+  "description": "Frontend build tools for Landing Page Node Hosting",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "build:css": "npx @tailwindcss/cli@latest -i ./src/input.css -o ./public/assets/css/main.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
   }
 }
