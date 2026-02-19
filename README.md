@@ -420,7 +420,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📬 Contact & Support
 
-- **GitHub**: [@reynaldiarya](https://github.com/reynaldiarya)
+- **GitHub**: [Akselerasi Prima Digital](https://github.com/Akselerasi-Prima-Digital)
 - **Repository**: [Landing-Page-Node-Hosting](https://github.com/reynaldiarya/Landing-Page-Node-Hosting)
 
 ---
