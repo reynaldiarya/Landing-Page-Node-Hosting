@@ -103,7 +103,7 @@ Landing-Page-Node-Hosting/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/reynaldiarya/Landing-Page-Node-Hosting.git
+git clone https://github.com/Akselerasi-Prima-Digital/Landing-Page-Node-Hosting.git
 cd Landing-Page-Node-Hosting
 ```
 
