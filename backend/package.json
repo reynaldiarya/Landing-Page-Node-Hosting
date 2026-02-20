@@ -1,18 +1,13 @@
 {
-  "name": "landing-page-backend",
+  "name": "landing-page-api",
   "version": "1.0.0",
-  "description": "Backend API server for Landing Page Node Hosting",
-  "main": "index.js",
+  "description": "Cloudflare Worker API for Landing Page Node Hosting (multi-server)",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "dependencies": {
-    "axios": "^1.13.4",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "wrangler": "^4.14.4"
   }
 }
