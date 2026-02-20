@@ -282,7 +282,7 @@ If your hosting supports Node.js applications:
 5. **Use a process manager** (recommended):
    ```bash
    npm install -g pm2
-   pm2 start index.js --name "landing-page-api"
+   pm2 start index.js --name "landing-page-node-hosting"
    pm2 save
    pm2 startup
    ```

@@ -1,12 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "landing-page-api",
+  "name": "landing-page-node-hosting",
   "main": "src/index.js",
-  "compatibility_date": "2025-04-01",
-
-  // HT_API_SERVER disimpan sebagai variable biasa (non-secret)
-  // HT_API_KEY harus di-set via: npx wrangler secret put HT_API_KEY
-  "vars": {
-    "HT_API_SERVER": "https://api.hetrixtools.com/v3"
-  }
+  "compatibility_date": "2026-01-20"
 }
